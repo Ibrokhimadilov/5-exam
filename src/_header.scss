@@ -1,0 +1,37 @@
+header{
+  .header_first_list {
+    display: flex;
+    gap: 19.8px;
+  
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+  }
+  .special_li_link{
+    color: blue;
+  }
+  .header_second_list{
+    display: flex;
+    gap: 30px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header_auth{
+  display: flex;
+  align-items: center;
+  gap: 0 2px;
+}
+.header_hi{
+  display: flex;
+}
