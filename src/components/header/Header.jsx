@@ -28,34 +28,34 @@ const Header = () => {
               }
           </li>
           <li>
-           <a href="/">{t('header_daily')}</a>
+           <a href="https://youtu.be/X5hdOd-Oy6A">{t('header_daily')}</a>
           </li>
           <li>
-            <a href="/">{t('header_brand')}</a>
+            <a href="https://youtu.be/X5hdOd-Oy6A">{t('header_brand')}</a>
           </li>
           <li>
-            <a href="/">{t('header_help')}</a>
+            <a href="https://youtu.be/X5hdOd-Oy6A">{t('header_help')}</a>
           </li>
           <li onClick={() => i18n.changeLanguage("uz")}>
-            <a href="#">ENG</a>
+            ENG
           </li>
               <span>|</span>
             <li onClick={() => i18n.changeLanguage("ru")}>
-              <a href="#">RU</a>
+              RU
             </li>
         </ul>  
         <ul className='header_second_list'>
           <li>
-            <a href="/">{t('header_sell')}</a>
+            <a href="https://youtu.be/X5hdOd-Oy6A">{t('header_sell')}</a>
           </li>
           <li>
-            <Link to='/like' href="/">{t('header_watchlist')} <FiChevronDown/></Link>
+            <Link to='/like' href="https://youtu.be/X5hdOd-Oy6A">{t('header_watchlist')} <FiChevronDown/></Link>
           </li>
           <li>
-            <a href="/">{t('header_myEbay')} <FiChevronDown/></a>
+            <a href="https://youtu.be/X5hdOd-Oy6A">{t('header_myEbay')} <FiChevronDown/></a>
           </li>
           <li>
-            <a href="/"><FiBell/></a>
+            <a href="https://youtu.be/X5hdOd-Oy6A"><FiBell/></a>
           </li>
           <li>
             <Link to='/cart'><FiShoppingCart/></Link>

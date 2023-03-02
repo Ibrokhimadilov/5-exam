@@ -16,6 +16,7 @@ import bigSimulate from '../../img/ads_combo3.png'
 const MainProducts = () => {
   console.log(i18n);
   const dispatch = useDispatch();
+  console.log(dispatch)
   const {t} = useTranslation();
   const {likedProducts} = useSelector(state => state.likeReducer)
   console.log(likedProducts, );
