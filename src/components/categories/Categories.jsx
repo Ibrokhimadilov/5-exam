@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react'
-import instance from "../../api/instance";
 import Container from '../../utils/Container';
 import { Link } from 'react-router-dom'; 
 import "./Categories.scss";
@@ -10,9 +8,10 @@ import i18n from "../../language/i18next";
 const Categories = () => {
   const [data, isLoading] = useFetchData("/categories");
   const {t} = useTranslation();
-
+  console.log(i18n);
   return (
     <section className='categories'>
+      {t("nothing")}
       <Container>
         <div className='categories-wrapper'>
           {!isLoading?

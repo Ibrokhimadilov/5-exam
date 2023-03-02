@@ -9,6 +9,7 @@ import logo from '../../img/eBay.svg'
 import "./Search.scss"; 
 import useFetchData from '../../hooks/useFetchData';
 const Search = () => {
+  console.log(i18n);
   const [searchResult, setSearchResult] = useState([])
   const [searchValue, setSearchValue] = useState("");
   const [searchCategory, setSearchCategory] = useState("")

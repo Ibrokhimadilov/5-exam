@@ -17,7 +17,6 @@ const Create = () => {
           .catch(err => console.log(err))
       }
   
-    const {t} = useTransition();
     const [formData, setFormData] = useState({
       email: "",
       password: "",

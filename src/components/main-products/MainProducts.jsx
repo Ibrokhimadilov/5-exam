@@ -14,9 +14,11 @@ import { FiArrowRight } from 'react-icons/fi'
 import bigSimulate from '../../img/ads_combo3.png'
 
 const MainProducts = () => {
+  console.log(i18n);
   const dispatch = useDispatch();
   const {t} = useTranslation();
   const {likedProducts} = useSelector(state => state.likeReducer)
+  console.log(likedProducts, );
 
   const [data1, setData1] = useState([])
   const [data2, setData2] = useState([])
@@ -64,16 +66,6 @@ const MainProducts = () => {
         console.log(err)
         })
   }, [])
-
-  function trimDescription(str){
-    return str.split(" ").slice(0, 10).join(" ") + "..."
-  }
-  function addToLike(product){
-    dispatch({product, type: "LIKE_PRODUCT"})
-  }
-  function removeFromLikedProducts(product){
-    dispatch({id: product.id, type: 'REMOVE_FROM_LIKED'})
-  }
 
   return (
     <section className='main-products'>

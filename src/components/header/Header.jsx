@@ -11,6 +11,7 @@ const Header = () => {
   const location = useLocation();
   const createUserData = useSelector(state => state.createReducer.email);
   const {likedProducts} = useSelector(state => state.likeReducer)
+  console.log(likedProducts);
 
   return location.pathname.includes("/auth") ? <></> : (
     <header>

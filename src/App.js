@@ -7,7 +7,6 @@ import Header2 from './components/header2/Header2'
 
 
 function App() {
-  alert("ustoz uzur footer tarjimasiga vaqt yetmadi, lekin pachti hamma joyda link ishlacooti")
   return (
     <div className="app">
       <Header/>

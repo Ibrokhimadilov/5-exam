@@ -23,7 +23,7 @@ const SearchResult = () => {
         }
 
 
-        instance.get(`products/?title=${productInfo.productName}&price_min=${lowerSelect}&price_max=${upperSelect}&categoryId=${category}`)
+        instance.get(`products/?title=${productInfo.productName}&price_min=${lowerSelect}&price_max=${upperSelect}&categoryId=${productInfo.category}`)
         .then(res => setFilterResult(res.data))
     }, [lowerSelect, upperSelect]);
 

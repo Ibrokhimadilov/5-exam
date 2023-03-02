@@ -16,7 +16,7 @@ const useFetchData = (ENDPOINT) => {
             console.log(err)
             setIsLoading(false)
             })
-      }, [])
+      })
       return [data, isLoading]
 }
 

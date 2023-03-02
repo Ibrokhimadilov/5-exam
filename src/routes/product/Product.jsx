@@ -6,7 +6,6 @@ import Container from '../../utils/Container'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import i18n from "../../language/i18next";
-import likeReducer from '../../redux/reducers/like-reducers'
 import { useSelector } from 'react-redux'
 import { BsFillSuitHeartFill } from 'react-icons/bs'
 import { useDispatch } from 'react-redux'
@@ -16,7 +15,6 @@ import 'swiper/css';
 import { useEffect, useState } from 'react'
 import instance from '../../api/instance'
 import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
-import { FcRefresh } from 'react-icons/fc'
 
 
 
@@ -47,7 +45,7 @@ const Product = () => {
     function trimDescription(str){
       return str.split(" ").slice(0, 10).join(" ") + "..."
     }
-
+    console.log(i18n);
   return (
     <section className='single-product'>
 

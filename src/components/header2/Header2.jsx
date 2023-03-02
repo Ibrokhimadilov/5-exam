@@ -9,7 +9,6 @@ import { useLocation } from 'react-router-dom'
 
 const Header2 = () => {
     const [data] = useFetchData('/categories')
-    const [cateId, setCateId] = useState("")
     const location = useLocation()
 
     // const toCate = (e) => {
