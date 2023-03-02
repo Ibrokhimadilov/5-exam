@@ -10,8 +10,6 @@ const Header = () => {
   const {t} = useTranslation();
   const location = useLocation();
   const createUserData = useSelector(state => state.createReducer.email);
-  const {likedProducts} = useSelector(state => state.likeReducer)
-  console.log(likedProducts);
 
   return location.pathname.includes("/auth") ? <></> : (
     <header>
@@ -30,13 +28,13 @@ const Header = () => {
               }
           </li>
           <li>
-           <a href="#">{t('header_daily')}</a>
+           <a href="/">{t('header_daily')}</a>
           </li>
           <li>
-            <a href="#">{t('header_brand')}</a>
+            <a href="/">{t('header_brand')}</a>
           </li>
           <li>
-            <a href="#">{t('header_help')}</a>
+            <a href="/">{t('header_help')}</a>
           </li>
           <li onClick={() => i18n.changeLanguage("uz")}>
             <a href="#">ENG</a>
@@ -48,16 +46,16 @@ const Header = () => {
         </ul>  
         <ul className='header_second_list'>
           <li>
-            <a href="#">{t('header_sell')}</a>
+            <a href="/">{t('header_sell')}</a>
           </li>
           <li>
-            <Link to='/like' href="#">{t('header_watchlist')} <FiChevronDown/></Link>
+            <Link to='/like' href="/">{t('header_watchlist')} <FiChevronDown/></Link>
           </li>
           <li>
-            <a href="#">{t('header_myEbay')} <FiChevronDown/></a>
+            <a href="/">{t('header_myEbay')} <FiChevronDown/></a>
           </li>
           <li>
-            <a href="#"><FiBell/></a>
+            <a href="/"><FiBell/></a>
           </li>
           <li>
             <Link to='/cart'><FiShoppingCart/></Link>
